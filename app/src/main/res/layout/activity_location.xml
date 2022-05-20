@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="1">
+
+
+
+        <ImageView
+            android:onClick="movetoMain"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/circle_bg_img"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:text="Track Location"
+            android:fontFamily="@font/nunito_bold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineHeight="16dp"
+            android:letterSpacing="0.08"/>
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        app:lottie_rawRes="@raw/location_animi"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/yellow_outline"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Location Services"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="7.5dp"
+            android:paddingLeft="5dp"
+            android:textColor="?colorPrimary"
+            android:fontFamily="@font/nunito_sans"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textSize="19sp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"></TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"></View>
+
+        <ImageView
+            android:id="@+id/start_location_updates"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+
+            android:src="@drawable/start_green_icon"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/stop_location_updates"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:src="@drawable/stop_icon"
+            ></ImageView>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/loading_gif"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+            android:src="@drawable/loading_gif_green"></pl.droidsonroids.gif.GifImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"></View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.25"></View>
+
+</LinearLayout>

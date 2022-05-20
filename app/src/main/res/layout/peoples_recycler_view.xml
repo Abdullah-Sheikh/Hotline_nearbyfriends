@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:background="?colorOnPrimary"
+    app:cardCornerRadius="15dp"
+    android:outlineSpotShadowColor="?colorPrimary"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorOnPrimary"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/student_imageview_id"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/profile"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5.5"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/student_text_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="22dp"
+                android:lineHeight="30dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="?colorOnSecondary"
+                android:layout_gravity="start"
+                android:gravity="center_vertical|start"
+                android:text="John Doe"
+
+                android:layout_weight="4"/>
+
+            <TextView
+                android:id="@+id/student_section_id"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fontFamily="@font/nunito_sans"
+                android:layout_marginLeft="5dp"
+                android:textColor="#7D7F88"
+                android:layout_gravity="start"
+                android:gravity="start|top"
+                android:layout_weight="2.5"
+                android:textSize="16dp"
+                android:text="Arhitech Desiger"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"/>
+        </LinearLayout>
+
+ <View
+     android:layout_width="0dp"
+     android:layout_height="match_parent"
+     android:layout_weight="2"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
