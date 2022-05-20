@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/bg.xml" value="0.1525" />
         <entry key="app/src/main/res/drawable-v24/profile_round_bg.xml" value="0.1235" />
         <entry key="app/src/main/res/drawable/background_launch.xml" value="0.1005" />
         <entry key="app/src/main/res/drawable/bottom_round_bg.xml" value="0.1" />
@@ -10,6 +11,7 @@
         <entry key="app/src/main/res/font/nunito_bold.xml" value="0.2760416666666667" />
         <entry key="app/src/main/res/font/nunito_sans.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_location.xml" value="0.22083333333333333" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.2453125" />
         <entry key="app/src/main/res/layout/activity_profile_details.xml" value="0.2453125" />
