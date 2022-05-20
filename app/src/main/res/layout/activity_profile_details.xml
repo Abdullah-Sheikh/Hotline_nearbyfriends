@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileDetailsActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_weight="1">
+
+
+
+        <ImageView
+            android:onClick="movetoMainActivity"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/circle_bg_img"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:text="Profile Details"
+            android:fontFamily="@font/nunito_bold"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineHeight="16dp"
+            android:letterSpacing="0.08"/>
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_gravity="center"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/profile1" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:text="Anita Dona"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|bottom"
+        android:textSize="24dp"
+        android:lineHeight="24dp"
+        android:letterSpacing="0.05"
+        android:fontFamily="@font/nunito_bold"
+        android:textStyle="bold"
+        android:textColor="#1A1E25"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="anitadona@gmail.com"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:lineHeight="16dp"
+        android:letterSpacing="0.05"
+        android:fontFamily="@font/nunito_sans"
+        android:textStyle="normal"
+        android:textColor="#7D7F88"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/facebook_icon"
+            android:layout_weight="1.5"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/instagram_icon"
+            android:layout_weight="1.5"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twitter_icon"
+            android:layout_weight="1.5"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75" />
+
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D6D6D6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/nunito_bold"
+        android:lineHeight="18dp"
+        android:letterSpacing="0.08"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:text="Bio"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_bold"
+        android:lineHeight="26dp"
+        android:letterSpacing="0.07"
+        android:textSize="16dp"
+        android:layout_gravity="center_vertical|end"
+        android:textStyle="normal"
+        android:justificationMode="inter_word"
+        android:layout_marginRight="20dp"
+        android:scrollbars = "vertical"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus eget urna sed convallis. Sed nec pharetra massa. Nunc condimentum, ligula eu egestas porttitor, mauris ante tincidunt tellus, vel blandit nibh nisi sed augue.
+This apartment equipped with Washing Machine, Electric Stove, Microwave, Refrigerator, Cutlery."/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.35"/>
+
+</LinearLayout>
