@@ -1,6 +1,7 @@
 package com.findnearby.hotline.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.findnearby.hotline.ProfileDetailsActivity;
 import com.findnearby.hotline.R;
 
 
@@ -47,6 +49,9 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.MyViewHold
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), ProfileDetailsActivity.class);
+                view.getContext().startActivity(intent);
 
             }
         });

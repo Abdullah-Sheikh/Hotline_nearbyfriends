@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    tools:context=".OnboardingActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        app:lottie_rawRes="@raw/onboarding_animi"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.25"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:lineHeight="32dp"
+            android:textStyle="bold"
+            android:text="Alone, find Friends"
+            android:textColor="@color/black"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:fontFamily="@font/nunito_sans"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus eget urna sed convallis. "
+            android:textColor="#7D7F88"
+            android:lineHeight="24dp"
+            android:textSize="14dp" />
+
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        app:cardCornerRadius="10dp"
+        android:outlineSpotShadowColor="?colorPrimary"
+        android:outlineAmbientShadowColor="?colorPrimary"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardBackgroundColor="?colorPrimary"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="?colorPrimary">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:lineHeight="24dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="18dp"
+
+            android:textColor="@color/white"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+    <androidx.cardview.widget.CardView
+        android:outlineProvider="background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#404040">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="  Signup"
+            android:lineHeight="24dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"/>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"/>
+
+</LinearLayout>
