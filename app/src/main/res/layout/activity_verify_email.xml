@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".VerifyEmailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="10"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"></View>
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:padding="8dp"
+            android:background="@drawable/circle_bg_img"
+            android:layout_gravity="center_vertical"
+            ></ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"></View>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"></View>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="0dp"
+        android:layout_weight="3.25"
+        android:src="@drawable/verify_email_pic"></ImageView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.15"
+        android:fontFamily="@font/nunito_sans"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="55sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Oopss!"></TextView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/nunito_sans"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:text="It seems like your email is not verifed, verify your email before using the App"></TextView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"></View>
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/verify_email_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        app:cardCornerRadius="10dp"
+        android:outlineSpotShadowColor="?colorPrimary"
+
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="?colorPrimary"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Verify Email"
+            android:lineHeight="24dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="18dp"
+
+            android:textColor="@color/white"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/verify_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:fontFamily="@font/poppins_medium"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="27sp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Verification Email Sent!"></TextView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"></View>
+
+    <TextView
+        android:id="@+id/go_to_home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/nunito_sans"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="#FF993A"
+        android:text="Now Login"></TextView>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></View>
+
+
+
+</LinearLayout>
