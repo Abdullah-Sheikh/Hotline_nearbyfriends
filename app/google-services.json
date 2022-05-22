@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950552363048",
+    "project_id": "hotline-db-cd57a",
+    "storage_bucket": "hotline-db-cd57a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950552363048:android:d46351e7ef12fb232f751d",
+        "android_client_info": {
+          "package_name": "com.findnearby.hotline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950552363048-8fjhj231h7g3s8sd5a6tk4pni9tsqdvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkAko-7cXbVlsn_gqN-qKMz6dztSbGri0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950552363048-8fjhj231h7g3s8sd5a6tk4pni9tsqdvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
