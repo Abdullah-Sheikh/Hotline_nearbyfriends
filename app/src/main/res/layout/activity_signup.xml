@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignupActivity"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:onClick="movetoonboarding"
+            android:layout_width="45dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                android:layout_gravity="center"
+                android:padding="8dp"/>
+
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:text="Let’s explore together!"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="26dp"
+            android:lineHeight="32dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/nunito_sans"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:maxLines="2"
+            android:autoSizeTextType="uniform"
+            android:text="SignUp to your Hotline account Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibu"
+            android:textColor="#7D7F88"
+            android:lineHeight="20dp"
+            android:textSize="14dp"
+            android:letterSpacing="0.1"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/nunito_sans"
+            android:letterSpacing="0.1"
+            android:lineHeight="24dp"
+            android:text="Full Name"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/signup_full_name"
+            android:inputType="textEmailAddress"
+
+            android:drawableLeft="@drawable/user_icon"
+            android:drawableTint="#FF993A"
+            android:paddingLeft="15dp"
+            android:textSize="16dp"
+            android:lineHeight="24dp"
+            android:letterSpacing="0.125"
+            android:fontFamily="@font/nunito_sans"
+            android:textStyle="normal"
+            android:textColor="#1A1E25"
+            android:drawablePadding="15dp"
+            android:hint="Insert your full name here"
+            android:textColorHint="#7D7F88"
+            android:state_window_focused="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/nunito_sans"
+            android:letterSpacing="0.1"
+            android:lineHeight="24dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:inputType="textEmailAddress"
+            android:drawableTint="#FF993A"
+            android:drawableLeft="@drawable/ic_email"
+            android:paddingLeft="15dp"
+            android:textSize="16dp"
+            android:lineHeight="24dp"
+            android:letterSpacing="0.125"
+            android:fontFamily="@font/nunito_sans"
+            android:textStyle="normal"
+            android:textColor="#1A1E25"
+            android:drawablePadding="15dp"
+            android:hint="Insert your email here"
+            android:textColorHint="#7D7F88"
+            android:state_window_focused="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg"
+            android:layout_marginBottom="15dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:text="Password"
+
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:lineHeight="24dp"
+            android:letterSpacing="0.1"/>
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:drawableTint="#FF993A"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/password_icon"
+            android:drawablePadding="15dp"
+
+            android:fontFamily="@font/nunito_sans"
+            android:hint="Insert your password here"
+            android:letterSpacing="0.125"
+            android:lineHeight="24dp"
+            android:paddingLeft="15dp"
+            android:state_window_focused="true"
+            android:textColor="#1A1E25"
+            android:textColorHint="#7D7F88"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:text="Confirm Password"
+
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:lineHeight="24dp"
+            android:letterSpacing="0.1"/>
+
+        <EditText
+
+            android:id="@+id/signup_confirm_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/password_icon"
+            android:drawablePadding="15dp"
+            android:drawableTint="#FF993A"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="Insert confirm password here"
+            android:letterSpacing="0.125"
+            android:lineHeight="24dp"
+            android:paddingLeft="15dp"
+            android:state_window_focused="true"
+            android:textColor="#1A1E25"
+            android:textColorHint="#7D7F88"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+
+            app:cardCornerRadius="10dp"
+            android:outlineSpotShadowColor="?colorPrimary"
+            android:outlineAmbientShadowColor="?colorPrimary"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="?colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="?colorPrimary">
+            <TextView
+                android:onClick="Signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Create account"
+                android:lineHeight="24dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="18dp"
+                android:textColor="@color/white"/>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <TextView
+            android:onClick="movetoLoginpage"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Already Registered? SignIn"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:fontFamily="@font/nunito_sans"
+            android:textStyle="bold"
+            android:textColor="#434343"
+            android:textSize="16dp"
+            android:lineHeight="24dp"
+            android:letterSpacing="0.1"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
