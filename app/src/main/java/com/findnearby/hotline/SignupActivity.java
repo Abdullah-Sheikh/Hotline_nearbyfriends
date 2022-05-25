@@ -59,6 +59,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     public void Signup_btn(View view) {
+        check();
     }
 
 
@@ -157,6 +158,12 @@ public class SignupActivity extends AppCompatActivity {
                     userdataMap.put("instaId", "empty");
                     userdataMap.put("twitterId", "empty");
                     userdataMap.put("bio", "none");
+                    userdataMap.put("latitude", 9.4901);
+                    userdataMap.put("longitude", 8.0206);
+                    userdataMap.put("date", "");
+                    userdataMap.put("time", "");
+                    userdataMap.put("image","");
+                    userdataMap.put("profession","");
 
                     RootRef.child(FirebaseAuth.getInstance().getUid()).updateChildren(userdataMap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {

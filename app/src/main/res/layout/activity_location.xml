@@ -98,6 +98,7 @@
             android:layout_weight="0.25"></View>
 
         <TextView
+            android:id="@+id/location_text"
             android:layout_width="0dp"
             android:text="Location Services"
             android:layout_gravity="center"

@@ -73,13 +73,14 @@
         android:layout_gravity="center"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:src="@drawable/profile1" />
+        android:src="@drawable/profile_img" />
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.15"/>
 
     <TextView
+        android:id="@+id/profile_details_name"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.75"
@@ -95,6 +96,7 @@
 
         />
     <TextView
+        android:id="@+id/profile_details_email"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
@@ -126,16 +128,19 @@
             android:layout_weight="2.75" />
 
         <ImageView
+            android:onClick="ViewFb"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/facebook_icon"
             android:layout_weight="1.5"/>
         <ImageView
+            android:onClick="ViewInsta"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/instagram_icon"
             android:layout_weight="1.5"/>
         <ImageView
+            android:onClick="Viewtwitter"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/twitter_icon"
@@ -179,6 +184,7 @@
         android:text="Bio"/>
 
     <TextView
+        android:id="@+id/profile_details_bio"
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
 

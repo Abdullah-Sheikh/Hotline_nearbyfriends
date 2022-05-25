@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".PersonalInfoActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"></View>
+
+        <ImageView
+
+            android:layout_width="48dp"
+            android:padding="5dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:background="@drawable/circle_bg_img"
+            android:layout_gravity="center_vertical"
+            ></ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"></View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Personal Data"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"></TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></View>
+
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="0dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.35"
+            android:src="@drawable/ic_logout"
+            android:layout_gravity="center_vertical"
+            ></ImageView>
+
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"></View>
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:src="@drawable/profile_img"
+        android:layout_width="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_height="135dp"
+        android:layout_centerHorizontal="true">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editImage"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            android:backgroundTint="?colorPrimary"
+            android:textColor="@color/white"
+            android:background="@drawable/green_fill__rounded_color"
+            android:layout_marginLeft="135dp"
+            android:layout_marginRight="135dp"
+            android:text="Edit Image"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/update_img"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            android:background="@drawable/orange_fill__rounded_color"
+            android:layout_marginLeft="135dp"
+            android:layout_marginRight="135dp"
+            android:text="Upload Image"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="UserName"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"></TextView>
+
+    <!-- Phone  Text show card start -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/name_text_card"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:background="@android:color/holo_red_light"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="true">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_card1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="7dp"
+                android:layout_weight="2"
+                android:src="@drawable/profile_icon"></ImageView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.3"></View>
+
+            <TextView
+                android:id="@+id/profile_name_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:text="Full Name"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="italic"></TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+            <ImageView
+                android:id="@+id/edit_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/edit_icon"></ImageView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+
+
+
+
+        </LinearLayout>
+
+        <!--
+        <TextView
+            android:id="@+id/breakfast_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Full Name"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="italic"></TextView>
+            -->
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Profile  Text show card end !!!!!!!!-->
+
+
+    <!-- Profile  EditText show card start -->
+    <androidx.cardview.widget.CardView
+
+        android:visibility="gone"
+        android:id="@+id/name_edittext_card"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:background="@android:color/holo_red_light"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/profile_icon"></ImageView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"></View>
+
+                <EditText
+                    android:id="@+id/profile_name_edtxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="6.5"></EditText>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:layout_width="fill_parent"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.5"></View>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel_edit_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/red_fill__rounded_color"
+
+                    android:layout_weight="3" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"></View>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update_edit_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:background="@drawable/green_fill__rounded_color"
+                    android:layout_weight="3"></androidx.appcompat.widget.AppCompatButton>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.5"></View>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <!-- Profile  EditText show card end    !!!!!!!!!!!!-->
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Profession"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="20dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"></TextView>
+
+    <!-- Phone  Text show card start -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profession_text_card"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:background="@android:color/holo_red_light"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="true">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_card_phone"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/profession_icon"
+
+                android:padding="8dp"
+                android:layout_weight="2"
+                ></ImageView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.3"></View>
+            <TextView
+                android:id="@+id/profile_profession_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:text="Profession"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="italic"></TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+            <ImageView
+                android:id="@+id/edit_profession"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/edit_icon"></ImageView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Profile  Text show card end !!!!!!!!-->
+
+
+    <!-- Profile  EditText show card start -->
+    <androidx.cardview.widget.CardView
+
+        android:visibility="gone"
+        android:id="@+id/profession_edittext_card"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:background="@android:color/holo_red_light"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:src="@drawable/profession_icon"
+                    android:layout_weight="2"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"></View>
+
+                <EditText
+
+                    android:id="@+id/profile_profession_edtxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="6.5"></EditText>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:layout_width="fill_parent"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.5"></View>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel_edit_profession"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/red_fill__rounded_color"
+                    android:layout_weight="3" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"></View>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update_profession"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    android:background="@drawable/green_fill__rounded_color"
+                    android:layout_weight="3"></androidx.appcompat.widget.AppCompatButton>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1.5"></View>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <!-- Profile  EditText show card end    !!!!!!!!!!!!-->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Bio"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"></TextView>
+
+        <!-- Phone  Text show card start -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bio_text_card"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_card_bio"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/biography_icon"
+
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"></View>
+                <TextView
+                    android:id="@+id/profile_bio_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_weight="5"
+                    android:text="Bio"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="italic"></TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:id="@+id/edit_bio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/edit_icon"></ImageView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Profile  Text show card end !!!!!!!!-->
+
+
+        <!-- Profile  EditText show card start -->
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/bio_edittext_card"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.6"></View>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="22dp"
+                        android:layout_gravity="top"
+                        android:src="@drawable/biography_icon"
+                        android:layout_weight="2"
+                        ></ImageView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+
+                    <EditText
+
+                        android:maxLines="10"
+                        android:maxLength="200"
+                        android:scrollbars = "vertical"
+                        android:id="@+id/profile_bio_edtxt"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="6.5"></EditText>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_width="fill_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cancel_edit_bio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/red_fill__rounded_color"
+                        android:layout_weight="3" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/update_bio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Update"
+                        android:textColor="@color/white"
+                        android:background="@drawable/green_fill__rounded_color"
+                        android:layout_weight="3"></androidx.appcompat.widget.AppCompatButton>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- Profile  EditText show card end    !!!!!!!!!!!!-->
+
+
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Account"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"></TextView>
+
+    <!-- Phone  Text show card start -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/email_text_card"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:background="@android:color/holo_red_light"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="true">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_card_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_email"></ImageView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.3"></View>
+            <TextView
+                android:id="@+id/profile_email_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="italic"></TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+            <ImageView
+                android:id="@+id/edit_email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:src="@drawable/ic_check_24"></ImageView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.6"></View>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Profile  Text show card end !!!!!!!!-->
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Facebook handler"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"></TextView>
+
+        <!-- Phone  Text show card start -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fbhandler_text_card"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_card_fbhandler"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/facebook_icon"
+
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    ></ImageView>
+
+
+                <TextView
+                    android:id="@+id/profile_fbhandler_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="5.9"
+
+                    android:maxLines="1"
+                    android:text="www.fb.com/id"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="italic"></TextView>
+
+
+                <ImageView
+                    android:id="@+id/edit_fbhandler"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/edit_icon"></ImageView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Profile  Text show card end !!!!!!!!-->
+
+
+        <!-- Profile  EditText show card start -->
+        <androidx.cardview.widget.CardView
+
+            android:visibility="gone"
+            android:id="@+id/fbhandler_edittext_card"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.6"></View>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:src="@drawable/facebook_icon"
+                        android:layout_weight="2"
+                        ></ImageView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+
+                    <EditText
+
+                        android:id="@+id/profile_fbhandler_edtxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="6.5"></EditText>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layout_width="fill_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cancel_edit_fbhandler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/red_fill__rounded_color"
+                        android:layout_weight="3" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/update_fbhandler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Update"
+                        android:textColor="@color/white"
+                        android:background="@drawable/green_fill__rounded_color"
+                        android:layout_weight="3"></androidx.appcompat.widget.AppCompatButton>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- Profile  EditText show card end    !!!!!!!!!!!!-->
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Instagram handler"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"></TextView>
+
+        <!-- Phone  Text show card start -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/instahandler_text_card"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_card_instahandler"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/instagram_icon"
+
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"></View>
+                <TextView
+                    android:id="@+id/profile_instahandler_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_weight="5"
+                    android:text="username"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="italic"></TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:id="@+id/edit_instahandler"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/edit_icon"></ImageView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Profile  Text show card end !!!!!!!!-->
+
+
+        <!-- Profile  EditText show card start -->
+        <androidx.cardview.widget.CardView
+
+            android:visibility="gone"
+            android:id="@+id/instahandler_edittext_card"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.6"></View>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:src="@drawable/instagram_icon"
+                        android:layout_weight="2"
+                        ></ImageView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+
+                    <EditText
+
+                        android:id="@+id/profile_instahandler_edtxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="6.5"></EditText>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layout_width="fill_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cancel_edit_instahandler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/red_fill__rounded_color"
+                        android:layout_weight="3" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/update_instahandler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Update"
+                        android:textColor="@color/white"
+                        android:background="@drawable/green_fill__rounded_color"
+                        android:layout_weight="3"></androidx.appcompat.widget.AppCompatButton>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- Profile  EditText show card end    !!!!!!!!!!!!-->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Twitter handler"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"></TextView>
+
+        <!-- Phone  Text show card start -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/t_handler_text_card"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_card_t_handler"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/twitter_icon"
+
+                    android:padding="8dp"
+                    android:layout_weight="2"
+                    ></ImageView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"></View>
+                <TextView
+                    android:id="@+id/profile_t_handler_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="5"
+                    android:maxLines="1"
+                    android:text="username"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="italic"></TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+                <ImageView
+                    android:id="@+id/edit_t_handler"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/edit_icon"></ImageView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"></View>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Profile  Text show card end !!!!!!!!-->
+
+
+        <!-- Profile  EditText show card start -->
+        <androidx.cardview.widget.CardView
+
+            android:visibility="gone"
+            android:id="@+id/t_handler_edittext_card"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:background="@android:color/holo_red_light"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="6dp"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.6"></View>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:src="@drawable/twitter_icon"
+                        android:layout_weight="2"
+                        ></ImageView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+
+                    <EditText
+
+                        android:id="@+id/profile_t_handler_edtxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="6.5"></EditText>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.3"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:layout_width="fill_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cancel_edit_t_handler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@drawable/red_fill__rounded_color"
+                        android:layout_weight="3" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"></View>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/update_t_handler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Update"
+                        android:textColor="@color/white"
+                        android:background="@drawable/green_fill__rounded_color"
+                        android:layout_weight="3"></androidx.appcompat.widget.AppCompatButton>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1.5"></View>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- Profile  EditText show card end    !!!!!!!!!!!!-->
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"></View>
+
+    </LinearLayout>
+
+
+</ScrollView>

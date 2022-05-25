@@ -1,6 +1,7 @@
 package com.findnearby.hotline;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class VerifyEmailActivity extends AppCompatActivity {
 
     ImageView backBtn;
-    Button verifyEmailBtn;
+    CardView verifyEmailBtn;
     TextView verifyEmailText, goToHomeText;
     FirebaseAuth firebaseAuth;
 
@@ -28,16 +29,13 @@ public class VerifyEmailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar().hide(); // hide the title bar
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
+
         setContentView(R.layout.activity_verify_email);
 
 
 
         backBtn = (ImageView) findViewById(R.id.back_btn);
-        verifyEmailBtn = (Button) findViewById(R.id.verify_email_btn);
+        verifyEmailBtn = (CardView) findViewById(R.id.verify_email_btn);
         verifyEmailText= (TextView) findViewById(R.id.verify_email_text);
         goToHomeText= (TextView) findViewById(R.id.go_to_home_text);
 
